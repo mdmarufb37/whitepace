@@ -1,0 +1,134 @@
+@import url('utilities.css');
+
+
+/*reset css*/
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, audio, video, article, aside, iframe, ul, ol{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  max-width: 100%;
+  height: 100%;
+}
+
+/*variables*/
+:root{
+  --body-width: 1920px;
+  --container: 1480px;
+  --dm-sans: 'DM Sans', sans-serif;
+  --inter: 'Inter', sans-serif;
+  --yellow: #FFE492;
+  --blue: #4F9CF9;
+  --white: #fff;
+  --black: #000;
+  --hero-bg: url('../media/bg element.jpg');
+  --management-bg: url('../media/bg spider.png');
+  --box-smooth-shadow: 0 0 20px -6px #FFE492;
+  --btn-border:1p x solid #FFE492
+}
+
+
+
+body{
+  max-width: var(--body-width);
+  width: 100%;
+  margin: 0 auto;
+  font-family: var(--dm-sans)
+}
+
+/*.container{
+  max-width: var(--container);
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}*/
+
+.text-border-img{
+	border-bottom: 10px  solid transparent;
+	border-image-source: url('./media/text border.png');
+    border-image-slice:30 ;
+    border-image-width: 30px;
+}
+
+
+/* common css */
+.container{
+  max-width: var(--container);
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+}
+
+.container .nav-menu ul li > a {
+  text-decoration: none;
+}
+
+.container .nav-menu ul li{
+  list-style: none;
+  padding: 28px;
+}
+
+.section-title{
+	font-family:var(--inter) ;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 87px;
+	letter-spacing: -0.02em;
+	color: var(--black);
+}
+
+#user-plan .plan-item ul li{
+  margin-bottom: 20px
+}
+
+.plan-item{
+  box-shadow: var(--box-smooth-shadow);
+  height: 620px;
+}
+
+.plan-item1{
+  box-shadow: var(--box-smooth-shadow);
+  height: 700px;
+}
+
+/* button */
+.btn{
+  background: transparent;
+  margin-top: 10px;
+  padding: 18.5px 40px;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.btn-border-hover{
+	border: var(--btn-border) ;
+	padding: 12px 40px;
+}
+
+.btn-bg-hover{
+transition: all 1s ease ;
+}
+
+.btn-border-hover:hover{
+	background: green !important;
+    border: var(--btn-border) ;
+    color: var(--black) !important;
+}
+
+.btn-bg-hover:hover {
+	background-color:var(--blue);
+	border: 0 ;
+	color: var(--white) !important;
+}
